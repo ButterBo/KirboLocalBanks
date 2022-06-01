@@ -24,11 +24,11 @@
                 app:srcCompat="@drawable/bank_kirbo" />
 
             <TextView
-                android:id="@+id/content"
+                android:id="@+id/mainTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/red"
-                android:text="Welcome to Kirbo's Local Bank"
+                android:text="@string/eng_title"
                 android:layout_gravity="center"
                 android:padding="10dp"
                 android:textAppearance="@android:style/TextAppearance.Large" />
@@ -40,7 +40,7 @@
                 android:background="@color/red"
                 android:layout_gravity="center"
                 android:padding="10dp"
-                android:text="Be able to visit a bank's website or even contact them " />
+                android:text="@string/eng_des" />
 
             <TextView
                 android:id="@+id/dbs"
@@ -48,8 +48,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:background="@color/crimson"
-                android:text="DBS"
+                android:background="@color/tomato"
+                android:text="@string/eng_dbs"
                 android:textSize="30dp" />
 
             <ImageView
@@ -57,8 +57,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:onClick="bank1"
                 app:srcCompat="@drawable/dbs" />
 
             <TextView
@@ -67,17 +65,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:background="@color/red"
+                android:background="@color/tomato"
                 android:textSize="30dp"
-                android:text="OCBC" />
+                android:text="@string/eng_ocbc" />
 
             <ImageView
                 android:id="@+id/imageViewOCBC"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:onClick="bank2"
                 app:srcCompat="@drawable/ocbc" />
 
             <TextView
@@ -88,15 +84,13 @@
                 android:textAlignment="center"
                 android:background="@color/tomato"
                 android:textSize="30dp"
-                android:text="UOB" />
+                android:text="@string/eng_uob" />
 
             <ImageView
                 android:id="@+id/imageViewUOB"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:clickable="true"
-                android:onClick="bank3"
                 app:srcCompat="@drawable/uob" />
         </LinearLayout>
     </ScrollView>

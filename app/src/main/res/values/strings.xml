@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">My Local Banks</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="website">Website</string>
+    <string name="contact">Contact the bank</string>
+    <string name="dbs_website">https://www.dbs.com.sg</string>
+    <string name="dbs_contact">18001111111</string>
+    <string name="ocbc_website">https://www.ocbc.com</string>
+    <string name="ocbc_phone">18003633333</string>
+    <string name="uob_website">https://www.uob.com.sg</string>
+    <string name="uob_contact">18002222121</string>
+    <string name="eng_title">Welcome to Kirbo\'s Local Bank</string>
+    <string name="eng_des">\"Be able to visit a bank\'s website or even contact them \"</string>
+    <string name="eng_dbs">DBS</string>
+    <string name="eng_ocbc">OCBC</string>
+    <string name="eng_uob">UOB</string>
+    <string name="chin_title">欢迎来到 Kirbo\'s Local Bank</string>
+    <string name="chin_desc">能够访问银行的网站，甚至与他们联系</string>
+    <string name="chin_dbs">星展银行</string>
+    <string name="chin_ocbc">华侨银行</string>
+    <string name="chin_uob">大华银行</string>
 </resources>
