@@ -1,12 +1,12 @@
 package sg.edu.rp.c346.id21044912.mylocalbanks;
 
-import androidx.annotation.RequiresApi;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
     boolean fav1 = false;
     boolean fav2 = false;
     boolean fav3 = false;
-    @SuppressLint("ResourceAsColor")
-    @RequiresApi(api = Build.VERSION_CODES.M)
+
     @Override
+    @SuppressLint("ResourceAsColor")
     public boolean onContextItemSelected(MenuItem item) {
         int id = item.getItemId();
 
@@ -85,11 +85,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentCall);
             }
             else if (id == R.id.FavoriteSelection){
-                if (fav1 == false){
-                    dbs.setBackgroundColor(R.color.red);
+                int myDynamicColor;// Here you can pass a string taken from the user or from wherever you want.
+                if (!fav1){
+                    myDynamicColor = Color.parseColor("#FFD700");
+                    fav1 =true;
                 } else {
-                    dbs.setBackgroundColor(R.color.tomato);
+                    myDynamicColor = Color.parseColor("#FF6347");
+                    fav1 =false;
                 }
+                dbs.setBackgroundColor(myDynamicColor);
             }
             return true;
 
@@ -103,11 +107,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentCall);
             }
             else if (id == R.id.FavoriteSelection){
-                if (fav2 == false){
-                    ocbc.setBackgroundColor(R.color.gold);
+                int myDynamicColor;// Here you can pass a string taken from the user or from wherever you want.
+                if (!fav2){
+                    myDynamicColor = Color.parseColor("#FFD700");
+                    fav2 = true;
                 } else {
-                    ocbc.setBackgroundColor(R.color.tomato);
+                    myDynamicColor = Color.parseColor("#FF6347");
+                    fav2 = false;
                 }
+                ocbc.setBackgroundColor(myDynamicColor);
             }
             return true;
 
@@ -121,11 +129,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentCall);
             }
             else if (id == R.id.FavoriteSelection){
-                if (fav3 == false){
-                    uob.setBackgroundColor(R.color.gold);
+                int myDynamicColor;// Here you can pass a string taken from the user or from wherever you want.
+                if (!fav3){
+                    myDynamicColor = Color.parseColor("#FFD700");
+                    fav3 = true;
                 } else {
-                    uob.setBackgroundColor(R.color.tomato);
+                    myDynamicColor = Color.parseColor("#FF6347");
+                    fav3 = false;
                 }
+                uob.setBackgroundColor(myDynamicColor);
             }
             return true;
         } else {
