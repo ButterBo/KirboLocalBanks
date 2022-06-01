@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bank_kirbo" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Welcome to Kirbo's Local Bank"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Be able to visit a bank's website or even contact them " />
+
+            <TextView
+                android:id="@+id/dbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="@color/crimson"
+                android:text="DBS"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageViewDBS"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="bank1"
+                app:srcCompat="@drawable/dbs" />
+
+            <TextView
+                android:id="@+id/ocbc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="@color/red"
+                android:textSize="30dp"
+                android:text="OCBC" />
+
+            <ImageView
+                android:id="@+id/imageViewOCBC"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="bank2"
+                app:srcCompat="@drawable/ocbc" />
+
+            <TextView
+                android:id="@+id/uob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="@color/tomato"
+                android:textSize="30dp"
+                android:text="UOB" />
+
+            <ImageView
+                android:id="@+id/imageViewUOB"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="bank3"
+                app:srcCompat="@drawable/uob" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
